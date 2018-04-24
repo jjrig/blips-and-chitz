@@ -1,1 +1,12 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+mat-form-field {
+    transition: background-color ease-in-out 0.15s,
+        border-radius ease-in-out 0.15s;
+
+    &:hover {
+        background-color: rgba(0,0,0,0.04);
+        border-radius: 0.5rem;
+    }
+}

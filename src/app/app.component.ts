@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public title = 'Blips and Chitz';
+
+  public hover(isHover: boolean) {
+    if (isHover) {
+      console.log(`isHover: ${isHover}`);
+    }
+  }
 }
