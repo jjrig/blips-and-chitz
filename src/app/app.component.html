@@ -3,14 +3,24 @@
     Welcome to {{ title }}!
   </h1>
   <mat-card>
-    <mat-form-field color="accent">
-      <input matInput class="filled" placeholder="Show me what you got">
+    <mat-form-field color="accent" class="enclosed row no-underline">
+      <input matInput placeholder="Show me what you got">
+    </mat-form-field>
+    <mat-form-field  class="enclosed no-underline">
+      <input matInput placeholder="Show me what you got">
+    </mat-form-field>
+    <button color="primary" mat-raised-button>Get Schwifty!</button>
+    <mat-form-field color="accent" class="row">
+      <input matInput class="filled rounded" placeholder="Show me what you got">
+    </mat-form-field>
+    <mat-form-field color="accent" class="">
+      <input matInput class="filled hover" placeholder="Show me what you got">
     </mat-form-field>
     <button color="primary" mat-raised-button>Get Schwifty!</button>
   </mat-card>
   <br>
   <mat-card>
-    <mat-form-field>
+    <mat-form-field class="hover">
       <input matInput placeholder="What is my purpose?">
     </mat-form-field>
     <button color="accent" mat-raised-button>Pass butter</button>

@@ -5,8 +5,51 @@ mat-form-field {
     transition: background-color ease-in-out 0.15s,
         border-radius ease-in-out 0.15s;
 
-    &:hover {
+    &.hover:hover {
         background-color: rgba(0,0,0,0.04);
         border-radius: 0.5rem;
+    }
+
+    &.no-underline .mat-input-underline {
+        display: none;
+    }
+
+    &.enclosed {
+        &.mat-focused {
+            &.mat-primary {
+                div.mat-input-flex.mat-form-field-flex {
+                    border-radius: 2px;
+                    border-bottom: 0.125rem solid #3f51b5;
+        
+                    &:hover {
+                        border-bottom-color: #3f51b5;
+                    }
+                }
+            }
+
+            &.mat-accent {
+                div.mat-input-flex.mat-form-field-flex {
+                    border-radius: 2px;
+                    border-bottom: 0.125rem solid #ff4081;
+        
+                    &:hover {
+                        border-bottom-color: #ff4081;
+                    }
+                }
+            }
+        }
+
+        div.mat-input-flex.mat-form-field-flex {
+            transition: border-bottom-color ease-in-out 0.2s;
+
+            border-radius: 2px;
+            border-bottom: 0.125rem solid rgba(0,0,0,0.1);
+            background-color: rgba(0,0,0,0.02);
+
+            &:hover {
+                background-color: rgba(0,0,0,0.04);
+                border-bottom-color: rgba(0,0,0,0.2);
+            }
+        }
     }
 }

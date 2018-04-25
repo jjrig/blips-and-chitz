@@ -1,0 +1,20 @@
+input {
+    transition: background-color ease-in-out 0.15s,
+        border-radius ease-in-out 0.15s;
+
+    &.filled {
+        background-color: rgba(0,0,0,0.04);
+
+        &.hover:hover {
+            background-color: rgba(0,0,0,0.08);
+        }
+    }
+
+    &.rounded {
+        border-radius: 0.1rem;
+    }
+}
+
+mat-form-field.row {
+    width: 100%;
+}
